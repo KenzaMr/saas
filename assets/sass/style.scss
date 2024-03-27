@@ -3,7 +3,28 @@
 @import "base";
 @import "layout";
 main{
-    @include assa();}
+    @include assa();
+    @extend %ablo;
+    // background: transparentize($orange, $amount: 0.5)
+    background: darken($orange, 20%)
+}
 p{
     @extend %ablo;
 }
+header{
+    width: cp(1980px, 1980px);
+    background: lighten($orange,20%);
+    min-height: $value*4;
+
+    nav{
+    @include nav();
+
+    ul{list-style: none;
+    li{
+    @include li();
+    
+    a{text-decoration: none;
+    color: white;
+
+    &:hover{color: red;
+}}}}}}

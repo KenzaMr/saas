@@ -1,8 +1,14 @@
 // directives
-@mixin assa(){
-    width: 100%;
-    height: $value * 80;
+@mixin nav(){
+    width: cp(1000px,1980px);
     background: $orange;
+    height: $value *4;
+}
+@mixin li(){display: inline-block;
+width: $value * 10;}
+@mixin assa(){
+    width: cp(411px,1980px );
+    height: $value * 80;
 }
 %ablo{
     color: blue;
