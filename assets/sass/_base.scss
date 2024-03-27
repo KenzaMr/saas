@@ -1,0 +1,15 @@
+// directives
+@mixin assa(){
+    width: 100%;
+    height: $value * 80;
+    background: $orange;
+}
+%ablo{
+    color: blue;
+    width: 400px;
+}
+// fonction
+@function cp ($valeur,$nombre){
+    @return ($valeur/ $nombre) * 100%;
+}
+// condition

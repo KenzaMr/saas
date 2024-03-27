@@ -1,0 +1,9 @@
+// minxin= influde
+@import "reset";
+@import "base";
+@import "layout";
+main{
+    @include assa();}
+p{
+    @extend %ablo;
+}
